@@ -1,0 +1,148 @@
+.carrello{
+  position: static;
+  align-items: center;
+
+}
+.myright {
+    position: absolute;
+    right: 2%;
+    border: 0;
+    font-style: normal;
+    font-size: inherit;
+    text-transform: inherit;
+    background: none;
+}
+.th{
+  text-align: center;
+}
+.mycard{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+  font-weight: 400;
+  overflow: hidden;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+.colour{
+  background-color: #3F51B5;
+}
+.leftprezzo{
+  position: absolute;
+  left: 2%;
+  border: 0;
+  font-style: normal;
+  font-size: inherit;
+  text-transform: inherit;
+  background: none;
+}
+.rightpay{
+  position: absolute;
+  right: 2%;
+  border: 0;
+  font-style: normal;
+  font-size: inherit;
+  text-transform: inherit;
+  background: none;
+}
+.lista{
+  border: 3px solid black;
+}
+.image{
+    border-radius: 50%;
+    height: auto;
+    width: auto;
+    max-width: 200px;
+    max-height: 100px;
+    min-width: 200px;
+    min-height: 100px;
+}
+
+  .tr-image{
+    background-repeat: no-repeat;
+   background-position: 50%;
+   border-radius: 50%;
+   height: auto;
+   width: auto;
+   max-width: 100px;
+   max-height: 100px;
+   border: 3px solid black;
+   align-items: center;
+  }
+.tr-quantita{
+  height: auto;
+  width: auto;
+  max-width: 30px;
+  max-height: 30px;
+  border: 3px solid black;
+  align-items: center;
+}
+.label{
+  color: black-text;
+}
+.disable{
+  background-color:transparent;
+  border: : none;
+}
+.mycardtitle{
+   color: black;
+  font-family: 'Trocchi', serif;
+  font-size: 45px;
+  font-weight: normal;
+  line-height: 48px;
+  margin: 0;
+  text-align: center;
+}
+.mybutton :actvive{
+  background-color: #3F51B5;
+}
+
+
+#food {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+}
+
+
+
+.show {
+    visibility: visible !important;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
